@@ -7,6 +7,8 @@ import { HeaderAppComponent } from './header-app/header-app.component';
 import { FooterAppComponent } from './footer-app/footer-app.component';
 import { ProductAppComponent } from './product-app/product-app.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatToolbarModule} from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,10 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatToolbarModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,84 @@
+.main__header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0px;
+  column-gap: 40px;
+}
+.main__header__title {
+  font-size: 50px;
+  letter-spacing: -1.5px;
+}
+.main__header__title-blue {
+  color: black;
+  font-size: 50px;
+  font-family: sans-serif;
+}
+
+.main__header__menu ul {
+  display: flex;
+  justify-content: flex-end;
+  text-decoration: none;
+  list-style: none;
+
+}
+
+
+.main__header__menu ul li a{
+  text-decoration: none;
+}
+.main__header__menu a {
+  padding: 10px 10px;
+  color: var(grey);
+  font-weight: 400;
+  font-size: 20px;
+  text-decoration:none;
+  list-style: none;
+  transition: all 0.3s ease-in-out;
+}
+.main__header__menu a:hover {
+  background-color: var(--blue);
+  color: #3d58a3;
+  transform: scale(1.2);
+  cursor: pointer;
+  text-decoration: none;
+}
+.container__header__menu {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  flex: 1;
+}
+.badge-car {
+  background-color: var(--dark-blue);
+  padding: 5px 10px;
+  border-radius: 4px;
+  color: white;
+}
+.search__form {
+  height: 44px;
+  display: flex;
+}
+.search__form input {
+  box-sizing: border-box;
+  height: 40px;
+  padding: 28px;
+  flex: 1;
+  //background-color: var(--light-gray);
+  background-color: #e6dddd;
+  color: var(--gray);
+  border: none;
+  transition: all -3s ease-in-out;
+  font-size: 22px;
+  border-radius: 1rem;
+}
+
+.search__form button {
+  width: 56px;
+  height: 56px;
+  background-color: var(--blue);
+  border: none;
+  color: #3b3939;
+  font-size: 20px;
+}

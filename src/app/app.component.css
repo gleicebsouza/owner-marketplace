@@ -1,0 +1,27 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  //font-size:62.5%;
+
+
+  //--color-header:;
+  //--color-footer:;
+  //bg-header:;
+
+}
+.container__header{
+  display: flex;
+  flex-direction: column;
+  border:2px solid red;
+  width: "80%";
+  margin:0 auto;
+  padding:20px;
+
+}
+.span__h1{
+  color:white;
+}
+

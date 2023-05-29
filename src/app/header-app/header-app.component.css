@@ -21,11 +21,9 @@
   justify-content: flex-end;
   text-decoration: none;
   list-style: none;
-
 }
 
-
-.main__header__menu ul li a{
+.main__header__menu ul li a {
   text-decoration: none;
 }
 .main__header__menu a {
@@ -33,7 +31,7 @@
   color: var(grey);
   font-weight: 400;
   font-size: 20px;
-  text-decoration:none;
+  text-decoration: none;
   list-style: none;
   transition: all 0.3s ease-in-out;
 }

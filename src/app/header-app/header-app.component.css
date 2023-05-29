@@ -36,11 +36,12 @@
   transition: all 0.3s ease-in-out;
 }
 .main__header__menu a:hover {
-  background-color: var(--blue);
+  background-color: var(--pink-2);
   color: #3d58a3;
   transform: scale(1.2);
   cursor: pointer;
   text-decoration: none;
+  border-radius: 8px;
 }
 .container__header__menu {
   display: flex;
@@ -75,8 +76,14 @@
 .search__form button {
   width: 56px;
   height: 56px;
-  background-color: var(--blue);
   border: none;
   color: #3b3939;
+  background-color: rgb(240, 175, 211);
   font-size: 20px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.search__form button:hover {
+  border-radius: 8px;
+  background-color: var(--pink-2);
 }

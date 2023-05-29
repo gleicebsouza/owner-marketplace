@@ -3,15 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-:root{
-  //font-size:62.5%;
-
-
-  //--color-header:;
-  //--color-footer:;
-  //bg-header:;
-
-}
 .container__header{
   display: flex;
   flex-direction: column;
@@ -21,7 +12,10 @@
   padding:20px;
 
 }
-.span__h1{
+.span__h1, i{
   color:white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
 }
-

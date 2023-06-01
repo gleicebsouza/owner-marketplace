@@ -1,9 +1,12 @@
-<section class="product__list" class="fa-solid fa-xmark">
-  <div class="product__list__card">
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<section  class="product__list" class="fa-solid fa-xmark">
+  <div class="product__list__card" *ngFor="let product of products">
     <a class="product__list__link">
-      <h2 class="product__item__name">Produto 1</h2>
-      <p class="product__item__price">00,00</p>
-      <p class="product__item__description">a vista</p>
+      <h2 class="product__item__name">{{product.name}}</h2>
+      <p class="product__item__price">{{product.price}}</p>
+      <p class="product__item__id">{{product.id}}</p>
+      <p class="product__item__description">{{product.descriptionPrice}}</p>
       <button class="product__item__buy-button">Comprar</button>
     </a>
   </div>

@@ -1,3 +1,5 @@
+/**Configurar lista produtos.Obter produtos,requisições através de serviço */
+import { ProductsService } from '../products.service';
 import { IProduct, products } from './../products';
 import { Component, OnInit } from '@angular/core';
 
@@ -7,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./products.component.css']
 })
 export class ProductsComponent implements OnInit {
- products: IProduct[]= products;
+ products: IProduct[]| undefined;
+ constructor(private productsService:ProductsService){}
 
   ngOnInit(): void {
+    this.products = this.productsService.getAll();
 
   }
 }

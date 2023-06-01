@@ -1,3 +1,4 @@
+/**Criado interface dos produtos para teste.Backend - api */
 
 export interface IProduct{
   id:number;

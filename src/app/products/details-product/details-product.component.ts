@@ -1,6 +1,6 @@
 /**Configurar rota para os detalhes dos produtos*/
 import { ProductsService } from './../../products.service';
-import { IProduct, products } from './../../products';
+import { IProduct } from './../../products';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
@@ -21,7 +21,7 @@ export class DetailsProductComponent implements OnInit{
   ngOnInit(): void { // configurar rotas
     const routeParams = this.route.snapshot.paramMap;
     const productsId = Number(routeParams.get('id'));
-    //this.products = this.productsService.getOne(productsId);
+    //this.product = this.productsService.getOne(productId);
 
   }
 }

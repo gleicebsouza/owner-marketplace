@@ -9,7 +9,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ProductsService {
-  products:IProduct[] =products;
+  products:IProduct[] = products;
 
   constructor() { }
 

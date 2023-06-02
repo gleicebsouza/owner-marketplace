@@ -1,13 +1,15 @@
 <!-- Renderizando a lista de produtos usando a diretiva *ngFor-->
 
-<section  class="product__list" class="fa-solid fa-xmark">
-  <div class="product__list__card" *ngFor="let product of products">
-    <a class="product__list__link">
-      <h2 class="product__item__name">{{product.name}}</h2>
-      <p class="product__item__price">{{product.price}}</p>
-      <p class="product__item__id">{{product.id}}</p>
-      <p class="product__item__description">{{product.descriptionPrice}}</p>
-      <button class="product__item__buy-button">Comprar</button>
+<section class="product-list" class="fa-solid fa-xmark">
+  <div class="product-list__card" *ngFor="let product of products">
+      <a class="product-list__link"
+    >
+      <img [src]="product.image" />
+      <h2 class="product-item__name">{{ product.name }}</h2>
+      <p class="product-item__price">{{ product.price | currency : "BRL" }}</p>
+      <p class="product-item__id">{{ product.id }}</p>
+      <p class="product-item__description">{{ product.descriptionPrice }}</p>
+      <button class="product-item__buy-button">Comprar</button>
     </a>
   </div>
 </section>

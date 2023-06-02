@@ -10,6 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductsComponent implements OnInit {
  products: IProduct[]| undefined;
+ 
  constructor(private productsService:ProductsService){}
 
   ngOnInit(): void {

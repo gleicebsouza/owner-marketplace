@@ -1,0 +1,19 @@
+.container__page-not-found{
+  display: flex;
+  flex-direction: column;
+  //flex-flow:column nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+.container__page-not-found h2{
+  display: flex;
+  align-items: center;
+  margin: 30px auto;
+  font-size:38px
+}
+
+.container__page-not-found img{
+  width: 400px;
+  height: 400px;
+}

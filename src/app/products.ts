@@ -15,13 +15,11 @@ export interface IProductCar extends IProduct{
 }
 
 export const products:IProduct[] = [
-  {id:1,name:"produto1", description:"produto1",price:10.00,descriptionPrice:"PIX",image:"./src/assets/imagem1.jpg"},
-  {id:1,name:"produto1", description:"produto1",price:10.00,descriptionPrice:"PIX",image:"./src/assets/imagem1.jpg"},
-  {id:2,name:"produto1", description:"produto1",price:10.00,descriptionPrice:"PIX",image:"./src/assets/imagem1.jpg"},
- // {id:3,name:"produto2", description:"produto2",price:10.00,descriptionPrice:"PIX",image:"./src/assets/imagem1.jpg"},
- // {id:4,name:"produto2", description:"produto2",price:10.00,descriptionPrice:"PIX",image:"./src/assets/imagem1.jpg"},
-  //{id:5,name:"produto3", description:"produto3",price:10.00,descriptionPrice:"PIX",image:"./src/assets/imagem1.jpg"},
-  //{id:6,name:"produto3", description:"produto3",price:10.00,descriptionPrice:"PIX",image:"./src/assets/imagem1.jpg"},
+  {id:1,name:"Produto1", description:"produto1",price:10.00,descriptionPrice:"PIX",image:"/assets/download.jpeg"},
+  {id:1,name:"Produto1", description:"produto1",price:10.00,descriptionPrice:"PIX",image:"/assets/download.jpeg"},
+  {id:2,name:"Produto1", description:"produto1",price:10.00,descriptionPrice:"PIX",image:"/assets/download.jpeg"},
+  //{id:3,name:"Produto2", description:"produto2",price:10.00,descriptionPrice:"PIX",image:"/assets/download.jpeg"},
+
 ]
 
 

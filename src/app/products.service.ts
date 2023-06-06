@@ -18,6 +18,5 @@ export class ProductsService {
   }
   getOne(productId:number){
     return this.products.find(productId => productId === productId)
-
   }
 }

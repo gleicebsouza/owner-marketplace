@@ -14,7 +14,7 @@ export class DetailsProductComponent implements OnInit{
   quantidade=1;
 
   constructor(
-    private productsService:ProductsService,
+    private ProductsService:ProductsService,
     private route:ActivatedRoute
   ){}
 

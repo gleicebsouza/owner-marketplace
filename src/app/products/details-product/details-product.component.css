@@ -31,12 +31,10 @@ label {
   margin: 20px 0;
   display: block;
 }
-
 input {
   width: 30px;
   padding: 5px;
 }
-
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -47,7 +45,6 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
 }
-
 button {
   background-color: var(--pink);
   border: none;
@@ -56,5 +53,12 @@ button {
   font-size: 24px;
   transition: 0.3s all;
   margin: 20px 0;
+  border-radius: 8px;
   cursor: pointer;
+}
+button:hover {
+  background-color: var(--pink-2);
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
 }

@@ -11,7 +11,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class DetailsProductComponent implements OnInit{
   products:IProduct | undefined;
- // quantidade=1;
+  quantity=1;
 
   constructor(
     private ProductsService:ProductsService,

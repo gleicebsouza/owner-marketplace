@@ -10,8 +10,8 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./details-product.component.css']
 })
 export class DetailsProductComponent implements OnInit{
-  products:IProduct[] | undefined;
-  quantidade=1;
+  products:IProduct | undefined;
+ // quantidade=1;
 
   constructor(
     private ProductsService:ProductsService,
@@ -20,8 +20,7 @@ export class DetailsProductComponent implements OnInit{
 
   ngOnInit(): void { // configurar rotas
     const routeParams = this.route.snapshot.paramMap;
-    const productsId = Number(routeParams.get('id'));
-    //this.product = this.productsService.getOne(productId);
-
+    const productId = Number(routeParams.get('id'));
+    this.products = this.ProductsService.getOne(productId);
   }
 }

@@ -10,11 +10,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductsComponent implements OnInit {
  products: IProduct[]| undefined;
+ //produtos:any;
 
- constructor(private productsService:ProductsService){}
+ constructor(private productsService:ProductsService,
+  ){}
 
   ngOnInit(): void {
+    // Obter todos os produtos através de um serviço
     this.products = this.productsService.getAll();
 
+
+    /* ===consumir api===
+    this.productsService.getProducts().subscribe(
+  (data) =>{
+   // console.log(data);
+   this.products = data['products'];
+  },
+  (err)=>{
+    console.log(err);
   }
+
+  )
+
+  */
+}
 }

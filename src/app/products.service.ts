@@ -2,6 +2,7 @@
  * Retorna a lista de produtos;
  * getOne: recebe o id do produto, o retorno será uma função que busca o produto */
 import { IProduct, products } from './products';
+import {HttpClient} from '@angular/common/http';
 
 import { Injectable } from '@angular/core';
 
@@ -10,13 +11,20 @@ import { Injectable } from '@angular/core';
 })
 export class ProductsService {
   products:IProduct[] = products;
+  //SERVER_URL= 'https://fakestoreapi.com/products/1';
 
-  constructor() { }
+  constructor( private http:HttpClient ) {
+   }
+   public getProducts(){
+    //return this.http.get(`${this.SERVER_URL}/produtos`);
+   }
 
   getAll(){
     return this.products;
+    //return this.getProducts;
   }
   getOne(productId:number){
+    //Encontrar produto através da condição
     return this.products.find(productId => productId === productId)
   }
 }

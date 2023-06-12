@@ -27,12 +27,14 @@ export class DetailsProductComponent implements OnInit{
     ){}
 
     ngOnInit(): void { // configurar rotas
-      const routeParams = this.route.snapshot.paramMap;
-    const productId = Number(routeParams.get('id'));
 
-    this.product = this.productsService.getOne(productId);
+      const routeParams = this.route.snapshot.paramMap;// parameters for route
+      const productId = Number(routeParams.get('id')); // convert id to number
+
+      this.product = this.productsService.getOne(productId);
   }
   addCart(){
+    /**Método ao clicar no botão para notificar e adicionar produto ao carrinho */
     this.notificationService.notify("Produto adicionado ao carrinho!");
     const product:IProductCart={
       ...this.product!,

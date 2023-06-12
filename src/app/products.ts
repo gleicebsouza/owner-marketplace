@@ -11,7 +11,7 @@ export interface IProduct{
 
 }
 
-export interface IProductCar extends IProduct{
+export interface IProductCart extends IProduct{
   quantityItems:number;
 }
 

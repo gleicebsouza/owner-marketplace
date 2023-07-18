@@ -1,7 +1,7 @@
 
 import { NotificationService } from './../../notification.service';
 import { ProductsService } from './../../products.service';
-import { IProduct, IProductCart } from './../../products';
+import { IProduct, IProductCart, products } from './../../products';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';

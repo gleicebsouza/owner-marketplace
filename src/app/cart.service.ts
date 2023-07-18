@@ -14,8 +14,11 @@ export class CartService {
    * Armazenar informações dentro do localStorage
    */
   getCart(){
-    const cart = JSON.parse(localStorage.getItem('cart') || "");
-    return cart;
+    /* const cart = JSON.parse(localStorage.getItem('cart') || "");
+    return cart; */
+    this.items=JSON.parse(localStorage.getItem('cart') || "[]");
+    return this.items;
+
   }
   addCart(product:IProductCart){
     /**Acrescentar o novo produto dentro do carrinho.
@@ -23,6 +26,10 @@ export class CartService {
     this.items.push(product);
     localStorage.setItem("cart", JSON.stringify(this.items));
 
+  }
+  removeProductCart(productId:number){
+    this.items =this.items.filter(items => items.id !== productId);
+    localStorage.setItem("cart", JSON.stringify(this.items));
   }
   clearCart(){
     this.items = [];

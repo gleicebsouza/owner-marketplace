@@ -13,7 +13,7 @@ export class ProductsService {
   products:IProduct[] = products;
   //SERVER_URL= 'https://fakestoreapi.com/products/1';
 
-  constructor( private http:HttpClient ) {
+  constructor ( private http:HttpClient ) {
    }
    public getProducts(){
     //return this.http.get(`${this.SERVER_URL}/produtos`);

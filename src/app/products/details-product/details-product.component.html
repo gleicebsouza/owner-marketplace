@@ -6,7 +6,7 @@
     <img [src]="product?.image" alt="" />
   </div>
   <div class="product-description__container">
-    <h2 class="product__name">{{ product?.description }}</h2>
+    <h2 class="product__name">{{ product?.name }}</h2>
     <h3 class="product__price">{{ product?.price | currency : "BRL" }}</h3>
     <p>Estoque</p>
     <label>
@@ -16,7 +16,6 @@
     <p class="product__avaiability">
       {{ product?.quantityItems }} Unidades em estoque
     </p>
-    <button (click)="  addCart()
-      ">Adicionar ao carrinho</button>
+    <button (click)="addCart()">Adicionar ao carrinho</button>
   </div>
 </section>

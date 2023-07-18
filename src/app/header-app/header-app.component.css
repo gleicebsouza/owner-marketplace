@@ -49,8 +49,8 @@
   row-gap: 20px;
   flex: 1;
 }
-.badge-car {
-  background-color: var(--dark-blue);
+.badge__car {
+  background-color:var(--pink);
   padding: 5px 10px;
   border-radius: 4px;
   color: white;

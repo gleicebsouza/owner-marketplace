@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header-app.component.css']
 })
 export class HeaderAppComponent implements OnInit{
-//Injetar serviço de carrinho 
+//Injetar serviço de carrinho
   constructor(public CartService:CartService){}
 
   ngOnInit(): void {

@@ -1,18 +1,18 @@
-<h2 class="cart-title">
-  <div>
-    <ul>
-      <li>
-        <img src="" alt="">
-        <p>Produto 1</p>
-        <p>price</p>
-        <label>
-          quantidade:
-          <input type="number">
-        </label>
-        <button></button>
-      </li>
-    </ul>
-    <h2 class="cart-total">Total produtos:</h2>
-    <button>comprar</button>
-  </div>
-</h2>
+<h2 class="cart-title">Carrinho</h2>
+<div ng*For="let itemsCart of itemsCart">
+  <ul>
+    <li *ngFor="let itemsCart of itemsCart">
+      <img [src]="itemsCart.image" />
+      <p>{{itemsCart.description}}</p>
+      <p> Preço: {{itemsCart.price | currency: "BRL"}}</p>
+      <label>
+        Quantidade:
+        <input type="number"[(ngModel)]="itemsCart.quantityItems" (change)="calcTotal()" />
+      </label>
+      <button class="remove-button" (click)="removeProductCart(itemsCart.id)"><i class="fa-solid fa-xmark"></i></button>
+    </li>
+  </ul>
+  <h2 class="cart-total">Total produtos:{{ total | currency:"BRL"}}</h2>
+  <button class="buy-button" (click)="buy()">Comprar</button>
+</div>
+<ng-template #noProduct> Nenhum Produto foi adicionado</ng-template>
